@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Валюты</title>
+
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="root">
+    <header></header>
+
+    <content>
+
+      <div id="currency-coverter">
+        <div>
+          <label for="currency-quantity">Сумма</label>
+          <input id="currency-quantity" type="number" name="currency-quantity" placeholder="Сумма в валюте">
+        </div>
+
+        <div>
+          <label for="currency-from">Из</label>
+          <select id="converter-currency-picker-from" name="currency-from">
+          </select>
+        </div>
+
+        <div>
+          <label for="currency-to">В</label>
+          <select id="converter-currency-picker-to" name="currency-to">
+          </select>
+        </div>
+
+        <div>
+          <button id="convert-action-button">Конвертировать</button>
+        </div>
+
+        <div class="currency-converter-result">
+          <p></p>
+        </div>
+      </div>
+
+
+      <!-- <div id="currency-rate-tracker-widget">
+        <div class="currency-rate-tracker-title">
+          <h3>Курс валют</h3>
+        </div>
+        <div class="currency-rate-tracker-content">
+          <div class="currency-rate-tracker-content-grid-wrapper">
+            <div class="currency-rate-tracker-content-grid currency-rate-tracker-content-grid-header">
+              <div class="rate-tracker-row-currency-title">
+                <p>Название валюты</p>
+              </div>
+              <div class="rate-tracker-row-currency-amount">
+                <p>Количество валюты</p>
+              </div>
+            </div>
+            <div class="currency-rate-tracker-content-grid currency-rate-tracker-content-grid-item">
+              <div class="rate-tracker-row-currency-title">
+                <p>Рубль</p>
+              </div>
+              <div class="rate-tracker-row-currency-amount">
+                <p>100</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    
+      <div id="wishlist-widget">
+        <div id="add-wishlist-item-wrapper">
+          <form id="add-wishlist-item-form">
+            <div>
+              <label for="item-name">Название товара</label>
+              <input type="text" name="item-name" placeholder="Введите название товара">
+            </div>
+
+            <div>
+              <label for="item-amount">Сумма</label>
+              <input type="number" name="item-amount" placeholder="Введите цену товара">
+            </div>
+
+            <div>
+              <label for="wishlist-currency-from">Из валюты</label>
+              <select id="wishlist-currency-picker-from" name="wishlist-currency-from">
+              </select>
+            </div>
+    
+            <div>
+              <label for="wishlistcurrency-to">В валюту</label>
+              <select id="wishlist-currency-picker-to" name="wishlist-currency-to">
+              </select>
+            </div>
+
+            <button type="submit">Добавить</button>
+          </form>
+        </div>
+
+        <div id="wishlist-grid"></div>
+      </div>
+    </div>
+    </content>
+
+  <script src="script.js"></script>
+</body>
+</html>
